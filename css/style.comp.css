@@ -302,7 +302,7 @@ body {
   @media only screen and (max-width: 20em) {
     .amuse__icon {
       background-image: url(../img/mb/组4.png);
-      width: 42.5rem;
+      width: 40.5rem;
       height: 40rem; } }
 
 .container {
@@ -357,6 +357,6 @@ body {
       width: 100vw;
       height: 6.75rem;
       background-color: #7a846e; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 20em) {
     .footer {
       width: 100vw; } }
