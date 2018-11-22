@@ -95,7 +95,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .header__info-box {
       margin-top: 3.25rem;
-      margin-right: -2rem; } }
+      margin-right: -3rem; } }
 
 .header__arrow {
   background-image: url(../img/pc/矩形5拷贝.png);
