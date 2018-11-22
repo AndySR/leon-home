@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.main {
+  flex: 0 0 calc(100% - 4.875rem);
+  margin-bottom: auto;
+  @include respond(phone) {
+    flex: 0 0 calc(100% - 6.75rem);
+  }
+}
+.header {
+  // position: relative;
+  width: 100%;
+  padding: 7.875rem 27rem 0 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  @include respond(phone) {
+    align-items: flex-start;
+    padding: 0 3.5rem;
+  }
+}
+
+.section {
+  width: 100%;
+  padding-left: 27rem;
+  padding-top: 9rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  @include respond(phone) {
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-top: 9.25rem;
+    padding-left: 3.5rem;
+  }
+}
+
+.footer {
+  // flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.875rem;
+  width: 100%;
+  background-color: #4e5f3c;
+  // background-image: url(../img/pc/矩形3.png);
+  @include respond(phone) {
+    height: 6.75rem;
+    background-color: #7a846e;
+  }
+}

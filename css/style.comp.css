@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/*
+0-600px: Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]px: is where our normal styles apply
+1800px+: Big desktop
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: Base + topography > general layout + grid > page layout > components
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url(../img/mb/手机网页背景.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }
+  @media only screen and (min-width: 37.5em) {
+    body {
+      background-image: url(../img/pc/pc端网页背景.jpg); } }
+
+.figure {
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.footer__box {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__social {
+  background-image: url(../img/pc/social-icon.png);
+  height: 2.25rem;
+  width: 7.875rem;
+  margin-right: 1.875rem; }
+
+.footer__contact {
+  background-image: url(../img/pc/phone-number.png);
+  height: 1.5rem;
+  width: 19.125rem; }
+
+.header__logo-box {
+  padding-top: 7.1875rem;
+  width: 9.375rem;
+  height: 6.25rem;
+  display: block; }
+  @media only screen and (min-width: 112.5em) {
+    .header__logo-box {
+      height: 5.25rem;
+      width: 9rem; } }
+
+.header__logo {
+  background-image: url(../img/mb/logo.pic_hd.jpg);
+  width: 100%;
+  height: 100%; }
+  @media only screen and (min-width: 112.5em) {
+    .header__logo {
+      background-image: url(../img/pc/logo.pic_hd.jpg); } }
+
+.header__login-register-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header__arrow {
+  background-image: url(../img/pc/矩形5拷贝.png);
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: 2.625rem; }
+
+.header__language {
+  background-image: url(../img/pc/语言按钮.png);
+  width: 8.625rem;
+  height: 2.25rem;
+  margin-right: 1.5rem; }
+
+.header__learn-more {
+  background-image: url(../img/pc/了解更多.png);
+  width: 8.625rem;
+  height: 2.25rem; }
+
+.section--left {
+  margin-right: auto; }
+
+.section--right {
+  margin-right: 18.75rem; }
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .description__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start; }
+  .description__powerbus {
+    background-image: url(../img/pc/POWERBUS.png);
+    width: 42rem;
+    height: 5.25rem; }
+  .description__fun-never-stop {
+    background-image: url(../img/pc/Funneverstops.png);
+    width: 28.5rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+    margin-left: -0.7rem; }
+  .description__bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem; }
+  .description__self-contained {
+    background-image: url(../img/pc/Self-containedCables.png);
+    width: 21.75rem;
+    height: 1.5rem;
+    margin-left: -0.7rem;
+    margin-right: 2.25rem; }
+  .description__stores {
+    width: 6.75rem;
+    height: 1.6rem;
+    fill: white;
+    background-size: cover;
+    background-image: url(../img/pc/圆角矩形6拷贝.png); }
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      .description__stores {
+        background-color: white;
+        -webkit-mask-image: url(../img/pc/圆角矩形6拷贝.png);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/pc/圆角矩形6拷贝.png);
+        mask-size: cover;
+        background-image: none; } }
+
+.download {
+  margin-top: 8.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  .download__left {
+    margin-right: 1.875rem; }
+  .download__dots {
+    background-image: url(../img/pc/椭圆1拷贝5.png);
+    height: 9.75rem;
+    width: 0.75rem; }
+  .download__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start; }
+    .download__right__box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+  .download__download-app {
+    background-image: url(../img/pc/DOWNLOADAPP.png);
+    height: 1.5rem;
+    width: 17.25rem;
+    margin-bottom: 1.5rem; }
+  .download__apple {
+    background-image: url(../img/pc/苹果下载按钮.png);
+    height: 3.375rem;
+    width: 11.25rem; }
+  .download__android {
+    background-image: url(../img/pc/安卓下载按钮.png);
+    height: 3.375rem;
+    width: 11.25rem; }
+
+.amuse__icon {
+  background-image: url(../img/pc/amuse.png);
+  height: 40.5rem;
+  width: 58.5rem; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
+
+.main {
+  flex: 0 0 calc(100% - 4.875rem);
+  margin-bottom: auto; }
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4.375rem; }
+  @media only screen and (min-width: 112.5em) {
+    .header {
+      padding: 7.875rem 27rem 0 27rem; } }
+
+.section {
+  width: 100%;
+  padding-left: 27rem;
+  padding-top: 9rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.875rem;
+  width: 100%;
+  background-color: #4e5f3c; }

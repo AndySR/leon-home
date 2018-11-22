@@ -1,0 +1,61 @@
+.header {
+  &__logo-box {
+    // position: absolute;
+    display: block;
+    height: 5.25rem;
+    width: 9rem;
+    @include respond(phone) {
+      margin-top: 5.5rem;
+      height: 4.5rem;
+      width: 7.75rem;
+    }
+  }
+  &__logo {
+    background-image: url(../img/pc/logo.pic_hd.jpg);
+    width: 100%;
+    height: 100%; //whatever height you want
+    @include respond(phone) {
+      background-image: url(../img/mb/logo.pic_hd.jpg);
+    }
+  }
+
+  &__info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(phone) {
+      margin-top: 3.25rem;
+    }
+  }
+  &__arrow {
+    background-image: url(../img/pc/矩形5拷贝.png);
+    width: 2.25rem;
+    height: 2.25rem; //whatever height you want
+    margin-right: 2.625rem;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__language {
+    background-image: url(../img/pc/语言按钮.png);
+    width: 8.625rem;
+    height: 2.25rem; //whatever height you want
+    margin-right: 1.5rem;
+    @include respond(phone) {
+      width: 10.25rem;
+      height: 3rem;
+      margin-right: 1rem;
+      background-image: url(../img/mb/Language.png);
+    }
+  }
+  &__learn-more {
+    background-image: url(../img/pc/了解更多.png);
+    width: 8.625rem;
+    height: 2.25rem; //whatever height you want
+    @include respond(phone) {
+      width: 10.25rem;
+      height: 3rem;
+      background-image: url(../img/mb/Learnmore.png);
+    }
+  }
+}

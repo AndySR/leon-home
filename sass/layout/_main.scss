@@ -1,0 +1,180 @@
+.section {
+  &--left {
+    margin-right: auto;
+    @include respond(phone) {
+      margin-right: 0;
+    }
+  }
+  &--right {
+    margin-right: 18.75rem;
+    @include respond(phone) {
+      margin-right: 0;
+      margin-left: -4.5rem;
+    }
+  }
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  &__powerbus {
+    background-image: url(../img/pc/POWERBUS.png);
+    width: 42rem;
+    height: 5.25rem;
+    @include respond(phone) {
+      width: 37rem;
+      height: 4.5rem;
+      background-image: url(../img/mb/POWERBUS.png);
+    }
+  }
+  &__fun-never-stop {
+    background-image: url(../img/pc/Funneverstops.png);
+    width: 28.5rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+
+    @include respond(phone) {
+      background-image: url(../img/mb/Funneverstops.png);
+      width: 25rem;
+      height: 2.75rem;
+      margin-top: 1.5rem;
+      margin-left: 0.48rem;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem;
+    @include respond(phone) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__self-contained {
+    background-image: url(../img/pc/Self-containedCables.png);
+    width: 21.75rem;
+    height: 1.5rem;
+    margin-left: -0.7rem;
+    margin-right: 2.25rem;
+    @include respond(phone) {
+      background-image: url(../img/mb/Self-containedCables.png);
+      width: 21rem;
+      height: 1.5rem;
+      margin-left: 0.16rem;
+      margin-right: 1.75rem;
+    }
+  }
+  &__stores {
+    width: 6.75rem;
+    height: 1.6rem;
+
+    fill: white;
+
+    // Older browsers
+    background-size: cover;
+    background-image: url(../img/pc/圆角矩形6拷贝.png);
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: white;
+      -webkit-mask-image: url(../img/pc/圆角矩形6拷贝.png);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/pc/圆角矩形6拷贝.png);
+      mask-size: cover;
+      background-image: none;
+    }
+    @include respond(phone) {
+      width: 6.5rem;
+      height: 1.75rem;
+    }
+  }
+}
+.download {
+  margin-top: 8.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  @include respond(phone) {
+    margin-top: 4.25rem;
+  }
+
+  &__left {
+    margin-right: 1.875rem;
+  }
+  &__dots {
+    background-image: url(../img/pc/椭圆1拷贝5.png);
+    height: 9.75rem;
+    width: 0.75rem;
+    @include respond(phone) {
+      background-image: url(../img/mb/椭圆1拷贝5.png);
+      height: 6.6rem;
+      width: 0.5rem;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  &__download-app {
+    background-image: url(../img/pc/DOWNLOADAPP.png);
+    height: 1.5rem;
+    width: 17.25rem;
+    margin-bottom: 1.5rem;
+    @include respond(phone) {
+      background-image: url(../img/pc/DOWNLOADAPP.png);
+      height: 1.5rem;
+      width: 16rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__apple {
+    background-image: url(../img/pc/苹果下载按钮.png);
+    height: 3.375rem;
+    width: 11.25rem;
+    @include respond(phone) {
+      background-image: url(../img/mb/组5.png);
+      height: 4rem;
+      width: 11.5rem;
+      margin-right: 2rem;
+    }
+  }
+  &__android {
+    background-image: url(../img/pc/安卓下载按钮.png);
+    height: 3.375rem;
+    width: 11.25rem;
+    @include respond(phone) {
+      background-image: url(../img/mb/组6.png);
+      height: 4rem;
+      width: 11.5rem;
+    }
+  }
+}
+
+.amuse {
+  &__icon {
+    background-image: url(../img/pc/amuse.png);
+    height: 40.5rem;
+    width: 58.5rem;
+    @include respond(phone) {
+      background-image: url(../img/mb/组4.png);
+      height: 40rem;
+      width: 47.5rem;
+    }
+  }
+}

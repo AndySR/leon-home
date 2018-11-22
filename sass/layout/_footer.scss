@@ -1,0 +1,26 @@
+.footer {
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__social {
+    background-image: url(../img/pc/social-icon.png);
+    height: 2.25rem;
+    width: 7.875rem;
+    margin-right: 1.875rem;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__contact {
+    background-image: url(../img/pc/phone-number.png);
+    height: 1.5rem;
+    width: 19.125rem;
+    @include respond(phone) {
+      background-image: url(../img/mb/contact.png);
+      height: 2.5rem;
+      width: 33.5rem;
+    }
+  }
+}
