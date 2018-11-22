@@ -48,11 +48,15 @@
   justify-content: center;
   align-items: center;
   height: 4.875rem;
-  width: 100%;
+  width: 100vw;
   background-color: #4e5f3c;
   // background-image: url(../img/pc/矩形3.png);
   @include respond(phone) {
+    width: 100vw;
     height: 6.75rem;
     background-color: #7a846e;
+  }
+  @include respond(small-phone) {
+    width: 100vw;
   }
 }

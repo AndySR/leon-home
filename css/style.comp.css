@@ -350,9 +350,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 4.875rem;
-  width: 100%;
+  width: 100vw;
   background-color: #4e5f3c; }
   @media only screen and (max-width: 37.5em) {
     .footer {
+      width: 100vw;
       height: 6.75rem;
       background-color: #7a846e; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      width: 100vw; } }
