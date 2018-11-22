@@ -23,7 +23,7 @@ ORDER: Base + topography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 75%; }
+  font-size: 62.5%; }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 50%; } }
@@ -131,19 +131,24 @@ body {
   margin-right: auto; }
   @media only screen and (max-width: 37.5em) {
     .section--left {
-      margin-right: 0; } }
+      margin-right: 0;
+      overflow: hidden; } }
 
 .section--right {
   margin-right: 18.75rem; }
   @media only screen and (max-width: 37.5em) {
     .section--right {
       margin-right: 0;
-      margin-left: -4.5rem; } }
+      margin-top: -1rem;
+      margin-left: -4rem; } }
 
 .description {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      overflow: hidden; } }
   .description__top {
     display: flex;
     flex-direction: column;
@@ -156,7 +161,7 @@ body {
     height: 5.25rem; }
     @media only screen and (max-width: 37.5em) {
       .description__powerbus {
-        width: 37rem;
+        width: 36.5rem;
         height: 4.5rem;
         background-image: url(../img/mb/POWERBUS.png); } }
   .description__fun-never-stop {
@@ -218,9 +223,13 @@ body {
   justify-content: flex-start; }
   @media only screen and (max-width: 37.5em) {
     .download {
-      margin-top: 4.25rem; } }
+      margin-top: 4.25rem;
+      overflow: hidden; } }
   .download__left {
-    margin-right: 1.875rem; }
+    margin-right: 1.875rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
   .download__dots {
     background-image: url(../img/pc/椭圆1拷贝5.png);
     height: 9.75rem;
@@ -228,7 +237,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .download__dots {
         background-image: url(../img/mb/椭圆1拷贝5.png);
-        height: 6.6rem;
+        height: 6rem;
         width: 0.5rem; } }
   .download__right {
     display: flex;
@@ -278,21 +287,22 @@ body {
   @media only screen and (max-width: 37.5em) {
     .amuse__icon {
       background-image: url(../img/mb/组4.png);
-      height: 40rem;
-      width: 47.5rem; } }
+      height: 44.27vh;
+      width: 100vw; } }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
 
 .main {
-  flex: 0 0 calc(100% - 4.875rem);
+  height: calc(100% - 4.875rem);
   margin-bottom: auto; }
   @media only screen and (max-width: 37.5em) {
     .main {
-      flex: 0 0 calc(100% - 6.75rem); } }
+      height: calc(100% - 6.75rem); } }
 
 .header {
   width: 100%;
@@ -319,7 +329,7 @@ body {
       align-content: flex-start;
       align-items: flex-start;
       padding-top: 9.25rem;
-      padding-left: 3.5rem; } }
+      padding-left: 1.5rem; } }
 
 .footer {
   display: flex;

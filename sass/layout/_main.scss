@@ -3,13 +3,15 @@
     margin-right: auto;
     @include respond(phone) {
       margin-right: 0;
+      overflow: hidden;
     }
   }
   &--right {
     margin-right: 18.75rem;
     @include respond(phone) {
       margin-right: 0;
-      margin-left: -4.5rem;
+      margin-top: -1rem;
+      margin-left: -4rem;
     }
   }
 }
@@ -17,6 +19,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include respond(phone) {
+    overflow: hidden;
+  }
 
   &__top {
     display: flex;
@@ -30,7 +35,7 @@
     width: 42rem;
     height: 5.25rem;
     @include respond(phone) {
-      width: 37rem;
+      width: 36.5rem;
       height: 4.5rem;
       background-image: url(../img/mb/POWERBUS.png);
     }
@@ -104,10 +109,14 @@
   justify-content: flex-start;
   @include respond(phone) {
     margin-top: 4.25rem;
+    overflow: hidden;
   }
 
   &__left {
     margin-right: 1.875rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   &__dots {
     background-image: url(../img/pc/椭圆1拷贝5.png);
@@ -115,7 +124,7 @@
     width: 0.75rem;
     @include respond(phone) {
       background-image: url(../img/mb/椭圆1拷贝5.png);
-      height: 6.6rem;
+      height: 6rem;
       width: 0.5rem;
     }
   }
@@ -173,8 +182,8 @@
     width: 58.5rem;
     @include respond(phone) {
       background-image: url(../img/mb/组4.png);
-      height: 40rem;
-      width: 47.5rem;
+      height: 44.27vh;
+      width: 100vw;
     }
   }
 }

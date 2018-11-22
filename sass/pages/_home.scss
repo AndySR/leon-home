@@ -3,12 +3,13 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  overflow: hidden;
 }
 .main {
-  flex: 0 0 calc(100% - 4.875rem);
+  height: calc(100% - 4.875rem);
   margin-bottom: auto;
   @include respond(phone) {
-    flex: 0 0 calc(100% - 6.75rem);
+    height: calc(100% - 6.75rem);
   }
 }
 .header {
@@ -37,7 +38,7 @@
     align-content: flex-start;
     align-items: flex-start;
     padding-top: 9.25rem;
-    padding-left: 3.5rem;
+    padding-left: 1.5rem;
   }
 }
 
