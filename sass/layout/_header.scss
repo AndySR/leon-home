@@ -25,7 +25,11 @@
     align-items: center;
     @include respond(phone) {
       margin-top: 3.25rem;
-      margin-right: -3rem;
+      margin-right: -1.5rem;
+    }
+    @include respond(small-phone) {
+      margin-top: 2.25rem;
+      margin-right: -2rem;
     }
   }
   &__arrow {
