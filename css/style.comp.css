@@ -99,7 +99,7 @@ body {
   @media only screen and (max-width: 20em) {
     .header__info-box {
       margin-top: 2.25rem;
-      margin-right: -2rem; } }
+      margin-right: -3rem; } }
 
 .header__arrow {
   background-image: url(../img/pc/矩形5拷贝.png);
@@ -144,12 +144,12 @@ body {
   @media only screen and (max-width: 37.5em) {
     .section--right {
       margin-right: 0;
-      margin-top: -1rem;
+      margin-top: 2rem;
       margin-left: -3rem; } }
   @media only screen and (max-width: 20em) {
     .section--right {
       margin-right: 0;
-      margin-top: -1rem;
+      margin-top: 2rem;
       margin-left: -4rem; } }
 
 .description {
@@ -297,7 +297,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .amuse__icon {
       background-image: url(../img/mb/组4.png);
-      width: 47.5rem;
+      width: 46.5rem;
       height: 40rem; } }
   @media only screen and (max-width: 20em) {
     .amuse__icon {

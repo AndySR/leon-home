@@ -10,12 +10,12 @@
     margin-right: 18.75rem;
     @include respond(phone) {
       margin-right: 0;
-      margin-top: -1rem;
+      margin-top: 2rem;
       margin-left: -3rem;
     }
     @include respond(small-phone) {
       margin-right: 0;
-      margin-top: -1rem;
+      margin-top: 2rem;
       margin-left: -4rem;
     }
   }
@@ -189,7 +189,7 @@
       background-image: url(../img/mb/组4.png);
       // height: 44.27vh;
       // width: 100vw;
-      width: 47.5rem;
+      width: 46.5rem;
       height: 40rem;
     }
     @include respond(small-phone) {
