@@ -28,6 +28,11 @@ ORDER: Base + topography > general layout + grid > page layout > components
       @content;
     } //600px
   }
+  @if $breakpoint == medium-phone {
+    @media only screen and (max-width: 23.5em) {
+      @content;
+    } //600px
+  }
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;

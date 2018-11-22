@@ -189,8 +189,11 @@
       background-image: url(../img/mb/组4.png);
       // height: 44.27vh;
       // width: 100vw;
-      // width: 47.5rem;
-      // height: 40rem;
+      width: 47.5rem;
+      height: 40rem;
+    }
+    @include respond(medium-phone) {
+      background-image: url(../img/mb/组4.png);
       width: 42.5rem;
       height: 40rem;
     }

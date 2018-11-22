@@ -297,6 +297,11 @@ body {
   @media only screen and (max-width: 37.5em) {
     .amuse__icon {
       background-image: url(../img/mb/组4.png);
+      width: 47.5rem;
+      height: 40rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .amuse__icon {
+      background-image: url(../img/mb/组4.png);
       width: 42.5rem;
       height: 40rem; } }
   @media only screen and (max-width: 20em) {
