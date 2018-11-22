@@ -46,6 +46,7 @@
     width: 8.625rem;
     height: 2.25rem; //whatever height you want
     margin-right: 1.5rem;
+    cursor: pointer;
     @include respond(phone) {
       width: 10.25rem;
       height: 3rem;
@@ -57,6 +58,7 @@
     background-image: url(../img/pc/了解更多.png);
     width: 8.625rem;
     height: 2.25rem; //whatever height you want
+    cursor: pointer;
     @include respond(phone) {
       width: 10.25rem;
       height: 3rem;

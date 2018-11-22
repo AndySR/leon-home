@@ -161,6 +161,7 @@
     background-image: url(../img/pc/苹果下载按钮.png);
     height: 3.375rem;
     width: 11.25rem;
+    cursor: pointer;
     @include respond(phone) {
       background-image: url(../img/mb/组5.png);
       height: 4rem;
@@ -172,6 +173,7 @@
     background-image: url(../img/pc/安卓下载按钮.png);
     height: 3.375rem;
     width: 11.25rem;
+    cursor: pointer;
     @include respond(phone) {
       background-image: url(../img/mb/组6.png);
       height: 4rem;

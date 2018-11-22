@@ -114,7 +114,8 @@ body {
   background-image: url(../img/pc/语言按钮.png);
   width: 8.625rem;
   height: 2.25rem;
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  cursor: pointer; }
   @media only screen and (max-width: 37.5em) {
     .header__language {
       width: 10.25rem;
@@ -125,7 +126,8 @@ body {
 .header__learn-more {
   background-image: url(../img/pc/了解更多.png);
   width: 8.625rem;
-  height: 2.25rem; }
+  height: 2.25rem;
+  cursor: pointer; }
   @media only screen and (max-width: 37.5em) {
     .header__learn-more {
       width: 10.25rem;
@@ -273,7 +275,8 @@ body {
   .download__apple {
     background-image: url(../img/pc/苹果下载按钮.png);
     height: 3.375rem;
-    width: 11.25rem; }
+    width: 11.25rem;
+    cursor: pointer; }
     @media only screen and (max-width: 37.5em) {
       .download__apple {
         background-image: url(../img/mb/组5.png);
@@ -283,7 +286,8 @@ body {
   .download__android {
     background-image: url(../img/pc/安卓下载按钮.png);
     height: 3.375rem;
-    width: 11.25rem; }
+    width: 11.25rem;
+    cursor: pointer; }
     @media only screen and (max-width: 37.5em) {
       .download__android {
         background-image: url(../img/mb/组6.png);
