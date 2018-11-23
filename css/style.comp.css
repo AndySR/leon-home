@@ -40,6 +40,42 @@ body {
     body {
       background-image: url(../img/mb/手机网页背景.png); } }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 .figure {
   display: inline-block;
   background-position: center;
@@ -73,7 +109,8 @@ body {
 .header__logo-box {
   display: block;
   height: 5.25rem;
-  width: 9rem; }
+  width: 9rem;
+  animation: moveInLeft 2s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 37.5em) {
     .header__logo-box {
       margin-top: 5.5rem;
@@ -91,7 +128,8 @@ body {
 .header__info-box {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  animation: moveInTop 1s ease-out; }
   @media only screen and (max-width: 37.5em) {
     .header__info-box {
       margin-top: 3.25rem;
@@ -170,7 +208,8 @@ body {
   .description__powerbus {
     background-image: url(../img/pc/POWERBUS.png);
     width: 42rem;
-    height: 5.25rem; }
+    height: 5.25rem;
+    animation: moveInLeft 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .description__powerbus {
         width: 36.5rem;
@@ -180,7 +219,9 @@ body {
     background-image: url(../img/pc/Funneverstops.png);
     width: 28.5rem;
     height: 3rem;
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    margin-left: -0.8rem;
+    animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .description__fun-never-stop {
         background-image: url(../img/mb/Funneverstops.png);
@@ -201,7 +242,8 @@ body {
     width: 21.75rem;
     height: 1.5rem;
     margin-left: -0.7rem;
-    margin-right: 2.25rem; }
+    margin-right: 2.25rem;
+    animation: moveInTop 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .description__self-contained {
         background-image: url(../img/mb/Self-containedCables.png);
@@ -212,6 +254,7 @@ body {
   .description__stores {
     width: 6.75rem;
     height: 1.6rem;
+    animation: moveInBottom 1s ease-out;
     fill: white;
     background-size: cover;
     background-image: url(../img/pc/圆角矩形6拷贝.png); }
@@ -225,14 +268,15 @@ body {
         background-image: none; } }
     @media only screen and (max-width: 37.5em) {
       .description__stores {
-        width: 6.5rem;
+        width: 7rem;
         height: 1.75rem; } }
 
 .download {
   margin-top: 8.25rem;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  animation: moveInBottom 1s ease-out; }
   @media only screen and (max-width: 37.5em) {
     .download {
       margin-top: 4.25rem;
@@ -245,7 +289,8 @@ body {
   .download__dots {
     background-image: url(../img/pc/椭圆1拷贝5.png);
     height: 9.75rem;
-    width: 0.75rem; }
+    width: 0.75rem;
+    animation: moveInLeft 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .download__dots {
         background-image: url(../img/mb/椭圆1拷贝5.png);
@@ -265,7 +310,8 @@ body {
     background-image: url(../img/pc/DOWNLOADAPP.png);
     height: 1.5rem;
     width: 17.25rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    animation: moveInTop 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .download__download-app {
         background-image: url(../img/pc/DOWNLOADAPP.png);
@@ -276,7 +322,8 @@ body {
     background-image: url(../img/pc/苹果下载按钮.png);
     height: 3.375rem;
     width: 11.25rem;
-    cursor: pointer; }
+    cursor: pointer;
+    animation: moveInBottom 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .download__apple {
         background-image: url(../img/mb/组5.png);
@@ -287,32 +334,35 @@ body {
     background-image: url(../img/pc/安卓下载按钮.png);
     height: 3.375rem;
     width: 11.25rem;
-    cursor: pointer; }
+    cursor: pointer;
+    animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .download__android {
         background-image: url(../img/mb/组6.png);
         height: 4rem;
         width: 11.5rem; } }
 
-.amuse__icon {
-  background-image: url(../img/pc/amuse.png);
-  height: 40.5rem;
-  width: 58.5rem; }
-  @media only screen and (max-width: 37.5em) {
-    .amuse__icon {
-      background-image: url(../img/mb/组4.png);
-      width: 47.5rem;
-      height: 40rem; } }
-  @media only screen and (max-width: 23.5em) {
-    .amuse__icon {
-      background-image: url(../img/mb/组4.png);
-      width: 42.5rem;
-      height: 40rem; } }
-  @media only screen and (max-width: 20em) {
-    .amuse__icon {
-      background-image: url(../img/mb/组4.png);
-      width: 40.5rem;
-      height: 40rem; } }
+.amuse {
+  animation: moveInRight 2s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .amuse__icon {
+    background-image: url(../img/pc/amuse.png);
+    height: 40.5rem;
+    width: 58.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .amuse__icon {
+        background-image: url(../img/mb/组4.png);
+        width: 47.5rem;
+        height: 40rem; } }
+    @media only screen and (max-width: 23.5em) {
+      .amuse__icon {
+        background-image: url(../img/mb/组4.png);
+        width: 42.5rem;
+        height: 40rem; } }
+    @media only screen and (max-width: 20em) {
+      .amuse__icon {
+        background-image: url(../img/mb/组4.png);
+        width: 40.5rem;
+        height: 40rem; } }
 
 .container {
   display: flex;
